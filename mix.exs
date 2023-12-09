@@ -12,11 +12,11 @@ defmodule FoodOrder.MixProject do
       deps: deps(),
       test_coverage: [tool: ExCoveralls],
       preferred_cli_env: [
-      coveralls: :test,
-      "coveralls.detail": :test,
-      "coveralls.post": :test,
-      "coveralls.html": :test,
-      "coveralls.cobertura": :test,
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test,
+        "coveralls.cobertura": :test
       ]
     ]
   end
@@ -64,7 +64,6 @@ defmodule FoodOrder.MixProject do
       {:mix_test_watch, "~> 1.0", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.14", only: :test},
       {:sobelow, "~> 0.13", only: [:dev, :test], runtime: false}
-
     ]
   end
 
